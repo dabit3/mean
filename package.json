@@ -6,11 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines" {
+  "engines": {
       "node": "0.10.x",
       "npm" : "1.3.x"
   },
-  "author": "Nader Dabit",
+  "author" : "Nader Dabit",
   "license": "ISC",
   "dependencies": {
     "express": "~4.8.3",
