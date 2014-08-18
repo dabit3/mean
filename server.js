@@ -18,8 +18,11 @@ app.use(logger('dev'));
 
 app.use(express.static(__dirname + '/public'));
 
-
-mongoose.connect('mongodb://dabit3:21street@ds063439.mongolab.com:63439/mean');
+if (env === 'development') {
+    mongoose.connect('mongodb://localhost/mean');
+} else {
+    mongoose.connect('mongodb://dabit3:21street@ds063439.mongolab.com:63439/mean');
+}
 
 var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error...'));
