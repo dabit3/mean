@@ -1,0 +1,8 @@
+<%- include scripts.ejs %>
+<div class="main-content">
+	<section class="content">
+        <%- include header.ejs %>
+		<div ng-view></div>
+	</section>
+    <h2><%= mongoMessage %></h2>
+</div>
