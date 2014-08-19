@@ -1,2 +1,14 @@
-<h1>This is a partial.</h1>
-{{myVar}}
+<div class="container">
+    <div class="jumbotron">
+        <h1>Multivision</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto aspernatur cumque delectus dolorem dolores dolorum eos est facere fuga illum, numquam pariatur quam quas voluptates! Cum ducimus repellat similique.</p>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div ng-include="'/partials/featured-courses'"></div>
+        </div>
+        <div class="col-md-6">
+            <div ng-include="'/partials/new-courses'"></div>
+        </div>
+    </div>
+</div>

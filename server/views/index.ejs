@@ -1,8 +1,22 @@
 <%- include scripts.ejs %>
 <div class="main-content">
-	<section class="content">
-        <%- include header.ejs %>
+	<nav class="navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="">Multivision <h6>Extreme Tech Training</h6></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                </ul>
+            </div>
+        </div>
+	</nav>
+    <section class="content">
 		<div ng-view></div>
 	</section>
-    <h2><%= mongoMessage %></h2>
+
+    <footer class="container text-center">
+        <p>&copy; 2014 Multivision Corp International Ltd.</p>
+    </footer>
 </div>

@@ -1,0 +1,16 @@
+body {
+    padding-top: 90px;
+}
+
+.navbar-inverse {
+    padding-bottom: 30px;
+}
+
+footer {
+    padding: 0px 15px;
+}
+
+footer p {
+    border-top: 1px solid #d7e0e2;
+    padding-top: 10px;
+}

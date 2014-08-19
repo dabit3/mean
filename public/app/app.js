@@ -6,7 +6,7 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
     $routeProvider
         .when('/', {
             templateUrl: '/partials/main.ejs',
-            controller: 'mainCtrl'
+            controller: 'mvMainCtrl'
         })
         .when('/about', {
             templateUrl: '/partials/about.ejs'
@@ -14,8 +14,4 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
         .otherwise({
             redirectTo: '/'
         });
-});
-
-angular.module('app').controller('mainCtrl', function($scope) {
-    $scope.myVar = "Hello Angular";
 });
